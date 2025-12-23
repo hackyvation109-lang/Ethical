@@ -1,0 +1,134 @@
+body {
+            background: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*HEADER*/
+        Header {
+            background-color: black;
+            background-image: url("imgs/ethical-hacker.jpg");
+            background-size: 100%;
+            background-position: center;
+            height: 400px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        Header a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-top: 40px;
+
+        }
+
+        Header .mobile {
+            display: none;
+
+        }
+
+        Header .Logo a {
+            background-image: url("imgs/IMG4.jpg");
+            background-size: 300px;
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 80px;
+            position: relative;
+            text-indent: -99999999px;
+            top: -30px;
+            width: 300px;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 20px;
+        }
+
+        /*RESPONSIVE RULES*/
+
+        @media screen and (max-width: 715px) {
+            Header {
+                height: 200px;
+            }
+             Header .mobile {
+                display: inline-block;
+             }
+
+             Header .desktop {
+                display: none;
+             }
+        }
+           
+        /* FEATURES */
+
+        .features {
+            background: white;
+            color: grey;
+            padding: 20px;
+           display: flex;
+            flex-direction: row;
+        }
+
+        .features figure{
+            margin: auto;
+            text-align: center;
+            text-transform:uppercase;
+            width: 100px;
+        }
+
+        .features figure img{
+            border: 1px solid white;
+            border-radius: 50%;
+            box-shadow: black 0 0 20px;
+            width: 200px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: black;
+            font-size: 12px;
+            color: gray;
+            padding: 20px 20px;
+            text-align: center;
+        } 
+        .carousel {
+            margin: 100px auto;
+            width: 90%;
+            border: 5px solid white;
+            display: flex;
+        }
+
+        .carousel::-webkit-scrollbar{
+            display: none;
+        }
+        .group {
+            align-items: center;
+            display: flex;
+            gap: 1em;
+            justify-content: center;
+            animation: spin 5s infinite linear;
+            padding-right: 1em;
+        }
+        .card{
+            flex: 0 0 5em;
+            height: 5em;
+            padding: 1em;
+            background: cornflowerblue;
+            font-size: 3rem;
+            border-radius: .2em;
+            text-align: center;
+            align-content: center;
+        }
+        @keyframes spin{
+            from {translate: 0;}
+            to {translate: -100%;}
+        }
